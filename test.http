@@ -1,0 +1,93 @@
+GET http://localhost:8000/api/vannes/
+
+###
+
+DELETE http://localhost:8000/api/vannes/999
+
+###
+PUT http://localhost:8000/api/abonnes/BA7736
+Accept: application/json
+content-type: application/json
+
+{
+        "id": "BA7736",
+        "raisoc": "ABABSA LAOUNII",
+        "bloc": "19",
+        "etree": null,
+        "etage": "01",
+        "aile": null,
+        "ndom": 1
+}
+###
+
+
+GET http://localhost:8000/api/abonnes/
+
+###
+
+POST http://localhost:8000/api/vannes
+content-type: application/json
+
+{
+        "id": "43215",
+        "y": 35.3950517,
+        "x": 0.1225992,
+        "pression": 2.15,
+        "ph": 7.5,
+        "debit": 2.65,
+        "zone": "laghouat",
+        "site": "laghouat"
+}
+###
+
+
+POST http://localhost:8000/api/empchateaus
+Accept: application/json
+content-type: application/json
+
+{        
+        "id": 78,
+        "x": 35.3950517,
+        "y": 0.1225992,
+        "Nom": "dfsdfds",
+        "z": 7.5,        
+        "type": "laghouat"        
+}
+###
+
+POST http://localhost:8000/api/register
+Accept: application/json
+content-type: application/json
+
+{
+        "name": "admin",
+        "email": "admin@ade.dz",
+        "password": "Ade@5555",
+        "password_confirmation": "Ade@5555"
+}
+
+###
+
+POST http://localhost:8000/api/login
+Accept: application/json
+content-type: application/json
+
+{
+        "email": "admin@ade.dz",
+        "password": "Ade@5555"        
+}
+###
+
+PUT http://localhost:8000/api/empchateaus/2
+Accept: application/json
+content-type: application/json
+
+{
+        "y": "35.380097",
+        "x": "0.127061",
+        "Nom": "R.2x1500 M3 Khessibiaa",
+        "z": "542",
+        "type": "Réservoir",
+        "id": 2
+}
+###

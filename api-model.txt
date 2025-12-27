@@ -1,0 +1,14 @@
+https://github.com/krlove/eloquent-model-generator
+php artisan krlove:generate:model User --table-name=user
+
+https://github.com/bhavingajjar/laravel-api-generator
+php artisan api:generate --model=User
+
+oran
+35.702079844720004, -0.6337855229005602
+
+mascara
+35.39791995186544, 0.14508661023459377
+
+alger
+36.729184691870394, 3.109703354856231
